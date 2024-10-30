@@ -1,0 +1,165 @@
+/* inject:imports */
+.flex, ul.wpcr__star-type-list li {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  flex: 1;
+  -webkit-flex: 1; }
+
+.flex-row {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row; }
+
+.flex-col {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column; }
+
+.flex-main-start {
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start; }
+
+.flex-main-center {
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.flex-main-end {
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end; }
+
+.flex-main-between {
+  justify-content: space-between;
+  -webkit-justify-content: space-between; }
+
+.flex-main-around {
+  justify-content: space-around;
+  -webkit-justify-content: space-around; }
+
+.flex-second-start {
+  align-items: flex-start;
+  -webkit-align-items: flex-start; }
+
+.flex-second-center, ul.wpcr__star-type-list li {
+  align-items: center;
+  -webkit-align-items: center; }
+
+.flex-second-end {
+  align-items: flex-end;
+  -webkit-align-items: flex-end; }
+
+.flex-second-around {
+  align-items: space-around;
+  -webkit-align-items: space-around; }
+
+.flex-second-between {
+  align-items: space-between;
+  -webkit-align-items: space-between; }
+
+.flex-wrap {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; }
+
+/* endinject */
+.wpcr--clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.wpcr--muted_text {
+  color: #999; }
+
+ul.wpcr__star-type-list li {
+  margin-bottom: 0px;
+  margin-top: 10px; }
+  ul.wpcr__star-type-list li:first-child {
+    margin-top: 0; }
+
+#wpcr__image-upload-container {
+  -ms-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out; }
+  #wpcr__image-upload-container img {
+    max-width: 80px;
+    margin-top: 10px; }
+
+.wpcr--hidden {
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0); }
+
+.wpcr__image_upload_row {
+  display: flex; }
+
+#wpcr-image-upload-url {
+  width: 70%; }
+
+.wpcr__text {
+  width: 100%; }
+
+img.wpcr__star-type-list__star-img {
+  max-width: 60px;
+  padding-right: 5px; }
+
+.wpcr__star-rating-table {
+  text-align: left; }
+  .wpcr__star-rating-table th:nth-child(2),
+  .wpcr__star-rating-table td:nth-child(2) {
+    padding-left: 10px; }
+
+.wpcr__ratings-column-label {
+  display: flex;
+  align-items: center; }
+  .wpcr__ratings-column-label span.text {
+    padding-left: 4px; }
+
+img.wpcr__admin-rating-icon {
+  max-height: 18px; }
+
+select#wpcr_post_types {
+  width: 100%;
+  max-width: 300px;
+  min-height: 160px; }
+
+/**
+ *
+ * Settings Page Tabs
+ *
+ */
+ul.wpcr__tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+
+ul.wpcr__tabs li {
+  background: none;
+  color: #222;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-bottom: 0;
+  background: #ccc; }
+
+ul.wpcr__tabs li.wpcr--settings-save-tab {
+  float: right;
+  padding: 0;
+  background: none; }
+
+ul.wpcr__tabs li.wpcr--current {
+  background: #fff;
+  color: #222; }
+
+.wpcr__tab-content {
+  display: none;
+  background: #fff;
+  padding: 15px; }
+
+.wpcr__tab-content.wpcr--current {
+  display: inherit; }

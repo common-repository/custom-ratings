@@ -1,0 +1,31 @@
+{
+  "name": "custom-ratings",
+  "version": "1.0.0",
+  "homepage": "https://github.com/spuddick/custom-ratings",
+  "authors": [
+    "Steve Puddick <steve.puddick@gmail.com>"
+  ],
+  "license": "MIT",
+  "description": "Custom Rating Plugin For Wordpress",
+  "main": "index.js",
+  "authors": [
+    "Steve Puddick"
+  ],
+  "license": "BSD-2-Clause",
+  "homepage": "https://github.com/spuddick/custom-ratings",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ractive": "~0.7.3",
+    "sass-flex": "scss-flexbox#*",
+    "ispinner": "~1.0.2",
+    "spectrum": "~1.8.0"
+  }
+}

@@ -1,0 +1,137 @@
+/* inject:imports */
+/* endinject */
+
+@mixin prefix($property, $value, $prefixes: ()) {  
+	@each $prefix in $prefixes {
+		#{'-' + $prefix + '-' + $property}: $value;
+	}
+ 
+	// Output standard non-prefixed declaration
+	#{$property}: $value;
+}
+
+.wpcr--clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.wpcr--muted_text {
+	color:#999;
+}
+
+ul.wpcr__star-type-list {
+	li {
+		@extend .flex;
+		@extend .flex-second-center;
+		margin-bottom:0px;
+		margin-top:10px;
+		&:first-child {
+			margin-top:0;
+		}
+	}
+}
+
+#wpcr__image-upload-container {
+	@include prefix(transition, transform 0.3s ease-in-out, ms );
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+
+	img {
+		max-width: 80px;
+		margin-top:10px;
+	} 
+}
+
+.wpcr--hidden {
+	@include prefix(transform, scale(0,0), ms webkit);
+}
+
+.wpcr__image_upload_row {
+	display: flex;
+}
+
+#wpcr-image-upload-url {
+	width:70%;
+}
+
+.wpcr__text {
+	width:100%
+}
+
+.wpcr__star-type-label {
+
+}
+
+img.wpcr__star-type-list__star-img {
+	max-width: 60px;
+	padding-right: 5px;
+}
+
+
+.wpcr__star-rating-table {
+	text-align: left;
+
+	& th:nth-child(2),
+	& td:nth-child(2) {
+		padding-left:10px;
+	}
+}
+
+.wpcr__ratings-column-label {
+	display: flex;
+	align-items: center;
+	span.text {
+		padding-left:4px;
+	}
+}
+
+img.wpcr__admin-rating-icon {
+	max-height:18px;
+}
+
+select#wpcr_post_types {
+	width: 100%;
+	max-width: 300px;
+	min-height: 160px;
+}
+
+/**
+ *
+ * Settings Page Tabs
+ *
+ */
+ul.wpcr__tabs {
+	margin: 0px;
+	padding: 0px;
+	list-style: none; 
+}
+
+ul.wpcr__tabs li {
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer; 
+	margin-bottom: 0;
+	background: #ccc;
+}
+
+ul.wpcr__tabs li.wpcr--settings-save-tab {
+	float:right;
+	padding:0;
+	background:none;
+}
+
+ul.wpcr__tabs li.wpcr--current {
+	background: #fff;
+	color: #222; 
+}
+
+.wpcr__tab-content {
+	display: none;
+	background: #fff;
+	padding: 15px; }
+
+.wpcr__tab-content.wpcr--current {
+	display: inherit; }
+

@@ -1,0 +1,36 @@
+compatibility with multiple wpml languages
+admin post list filter
+
+
+TODO
+
+- look over comments from wp plugin boiler plate
+- bezier transition for star animation
+- look over phpdocs syntax
+- color selector text
+- move 'adding your vote' text to space above report text
+- wrap buttons in p tag for consistent spacing between elements
+- mobile solution to multiple lines of icons
+
+TESTING
+
+-test translation of variable strings, especially report text
+
+ROAD MAP
+- have separate error text field for 'getting vote data' and 'adding vote'
+-voting for  comments
+-notice that if using WPML and no root post, won’t display ratings
+-loop ajax calls if error/fail
+-account for dynamically added posts/excerpts
+-only show rating if above 3
+-account for different language display of decimal numbers
+-before releasing public github link, remove initial commits with init code bas
+-admin post listing with filter for rating, with icons
+-styling options for box
+-separate settings page into tabs
+-option to apply only to main query object
+-option to hide all css styles, give option to add own css adjustments
+
+Settings Page:
+	to limit vote based on IP address
+	how long to cache vote results for with cache headers
